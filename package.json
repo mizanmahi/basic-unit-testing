@@ -1,0 +1,17 @@
+{
+   "name": "async-example",
+   "version": "1.0.0",
+   "main": "index.js",
+   "license": "MIT",
+   "type": "module",
+   "scripts": {
+      "test": "vitest --reporter verbose"
+   },
+   "dependencies": {
+      "crypto-js": "^4.1.1",
+      "jsonwebtoken": "^9.0.0"
+   },
+   "devDependencies": {
+      "vitest": "^0.29.8"
+   }
+}
