@@ -5,7 +5,7 @@
    "license": "MIT",
    "type": "module",
    "scripts": {
-      "test": "vitest --reporter verbose"
+      "test": "vitest --reporter verbose --run"
    },
    "dependencies": {
       "crypto-js": "^4.1.1",

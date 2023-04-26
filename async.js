@@ -10,7 +10,8 @@ export function encryptMessagePromise(message, key) {
       setTimeout(() => {
          const encryptedMessage = CryptoJS.AES.encrypt(message, key).toString();
          if (encryptedMessage) {
-            resolve(encryptedMessage);
+            // resolve(encryptedMessage);
+            resolve('sdfsdf');
          } else {
             reject(new Error('Failed to encrypt message'));
          }

@@ -2,6 +2,16 @@ import { it, expect } from 'vitest';
 
 import { User } from './hooks';
 
+
+it('should have an email property', () => {
+  const testEmail = 'test@test.com';
+
+  const user = new User(testEmail);
+
+  expect(user).toHaveProperty('email');
+});
+
+
 it('should update the email', () => {
   const testEmail = 'test@test.com';
   const newTestEmail = 'test2@test.com';
@@ -12,13 +22,7 @@ it('should update the email', () => {
   expect(user.email).toBe(newTestEmail);
 });
 
-it('should have an email property', () => {
-  const testEmail = 'test@test.com';
 
-  const user = new User(testEmail);
-
-  expect(user).toHaveProperty('email');
-});
 
 it('should store the provided email value', () => {
   const testEmail = 'test@test.com';
