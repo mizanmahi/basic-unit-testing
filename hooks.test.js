@@ -1,24 +1,30 @@
-import { it, expect, beforeEach } from 'vitest';
+import { it, expect, beforeEach, describe, beforeAll } from 'vitest';
 
 import { User } from './hooks';
 
 const testEmail = 'test@test.com';
-let user ;
+let user;
 
 beforeEach(() => {
-  user = new User(testEmail);
-})
-
-it('should have an email property', () => {
-   expect(user).toHaveProperty('email');
+   user = new User(testEmail);
 });
 
-it('should update the email', () => {
-   const newTestEmail = 'test2@test.com';
+beforeAll();
 
-   user.updateEmail(newTestEmail);
+describe('test', () => {
+   beforeAll();
 
-   expect(user.email).toBe(newTestEmail);
+   it('should have an email property', () => {
+      expect(user).toHaveProperty('email');
+   });
+
+   it('should update the email', () => {
+      const newTestEmail = 'test2@test.com';
+
+      user.updateEmail(newTestEmail);
+
+      expect(user.email).toBe(newTestEmail);
+   });
 });
 
 it('should store the provided email value', () => {

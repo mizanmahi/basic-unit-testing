@@ -8,6 +8,7 @@
       "test": "vitest --reporter verbose --run"
    },
    "dependencies": {
+      "crypto": "^1.0.1",
       "crypto-js": "^4.1.1",
       "jsonwebtoken": "^9.0.0"
    },
