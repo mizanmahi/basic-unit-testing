@@ -29,6 +29,7 @@ describe('test', () => {
 
 it('should store the provided email value', () => {
    expect(user.email).toBe(testEmail);
+   
 });
 
 it('should clear the email', () => {
