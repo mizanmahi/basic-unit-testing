@@ -19,4 +19,4 @@ export async function storeToken(data) {
 }
 
 const data = generateToken(log);
-storeToken(data);
+// storeToken(data);
